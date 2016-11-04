@@ -26,7 +26,7 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
 
 ###5	MODELO CONCEITUAL<br>
     5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/AndyVitoria/trab01/blob/master/Savior%20-%20BD.jpg?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/AndyVitoria/trab01/blob/master/SAVIOR.jpg?raw=true "Modelo Conceitual")
     
     5.2 NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
