@@ -31,8 +31,8 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
     5.2 NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
 ####5.1 Validação do Modelo Conceitual
-    [Grupo01]: Everson
-    [Grupo02]: Brendon
+    [Grupo01]: Everson Delmaschio
+    [Grupo02]: Brendon Mauro
 
 ####5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
@@ -43,18 +43,18 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
     b) justifique!
 
 ####5.3 DESCRIÇÃO DOS DADOS 
-    PESSOA: Tabela que armazena as informações relativas à pessoa
+    PESSOA: Tabela que armazena as informações relativas à pessoa.
      nome: campo que armazena o nome para cada pessoa cadastrada no sistema.
      email:
      senha:
      ID:
     
-    USUARIO: Tabela que armazena as informações relativas ao usuário
+    USUARIO: Tabela que armazena as informações relativas ao usuário.
      data_Nasc:
      genero:
      data_de_inscricao:
    
-    ADMINISTRADOR: Tabela que armazena as informações relativas ao administrador
+    ADMINISTRADOR: Tabela que armazena as informações relativas ao administrador.
      matricula_funcional:
      CPF: campo que armazena o número de Cadastro de Pessoa Física para cada administrador do sistema.
 
@@ -65,48 +65,45 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
      codigo_contato:
      tipo_contato:
     
-    ENDERECO:
+    ENDERECO: Tabela que armazena as informações sobre o endereço.
      ID:
      rua:
-     CEP:
+     CEP: campo que armazena o Codigo de Endereçamento Postal de cada endereço cadastrado.
     
     Bairro:
      Codigo_bairro:
      Nome_bairro:
      
     Municipio:
-     Codigo_municipio:
-     Nome_micinipio:
+     Codigo_municipio: 
+     Nome_micinipio: campo que armazena o nome do município.
     
-    LOCAL:
+    LOCAL: Tabela que armazena as informações relativas ao local salvo pelo usuário.
      apelido:
      ID_Usuarui:
+     ID_Local:
     
-    ROTA:
+    ROTA: Tabela que armazena as informações relativas à rota salva pelo usuário.
      apelido:
      ID_Rota:
      ID_Usuario:
      
-    CAMINHO:
+    CAMINHO: Tabela que armazena as informações relativas à ordem da rota salva pelo usuário.
      ordem:
     
-    BOLETIM: Tabela que armazena as informações relativas ao boletim
+    BOLETIM: Tabela que armazena as informações relativas ao boletim.
      ID:
      data:
      hora:
      crime:
     
-    ITEM_ROUBADO:
+    ITEM_ROUBADO: Tabela que armazena as informações relativas ao item roubado.
      qtd:
      item:
     
-    TIPO_DE_LOCAL:
+    TIPO_DE_LOCAL: Tabela que armazena as informações relativas ao tipo de local.
      codigo:
      tipo_local:
-
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 
 
 ###6	MODELO LÓGICO<br>
