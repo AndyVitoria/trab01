@@ -44,36 +44,65 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
 
 ####5.3 DESCRIÇÃO DOS DADOS 
     PESSOA: Tabela que armazena as informações relativas à pessoa
-    nome: campo que armazena o nome para cada pessoa cadastrada no sistema.
-    email:
-    senha:
-    ID:
+     nome: campo que armazena o nome para cada pessoa cadastrada no sistema.
+     email:
+     senha:
+     ID:
     
     USUARIO: Tabela que armazena as informações relativas ao usuário
-    dataNascimento:
-    genero:
-    dataInscricao:
+     data_Nasc:
+     genero:
+     data_de_inscricao:
    
     ADMINISTRADOR: Tabela que armazena as informações relativas ao administrador
-    matriculaFuncional:
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada administrador do sistema.
-    
+     matricula_funcional:
+     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada administrador do sistema.
+
     CONTATO:
+     contato_usuario:
+    
+    TIPO_DE_CONTATO:
+     codigo_contato:
+     tipo_contato:
     
     ENDERECO:
+     ID:
+     rua:
+     CEP:
+    
+    Bairro:
+     Codigo_bairro:
+     Nome_bairro:
+     
+    Municipio:
+     Codigo_municipio:
+     Nome_micinipio:
     
     LOCAL:
-    apelido:
+     apelido:
+     ID_Usuarui:
     
     ROTA:
+     apelido:
+     ID_Rota:
+     ID_Usuario:
+     
+    CAMINHO:
+     ordem:
     
     BOLETIM: Tabela que armazena as informações relativas ao boletim
-    data:
-    hora:
-    crime:
-    numeroBoletim:
-    idPessoa:
+     ID:
+     data:
+     hora:
+     crime:
     
+    ITEM_ROUBADO:
+     qtd:
+     item:
+    
+    TIPO_DE_LOCAL:
+     codigo:
+     tipo_local:
 
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
