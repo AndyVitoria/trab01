@@ -43,19 +43,38 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
     b) justifique!
 
 ####5.3 DESCRIÇÃO DOS DADOS 
-    PESSOA: Tabela que armazena as informações relativas à pessoa<br>
-    nome:
+    PESSOA: Tabela que armazena as informações relativas à pessoa
+    nome: campo que armazena o nome para cada pessoa cadastrada no sistema.
     email:
     senha:
-    contato:
+    ID:
     
-    USUARIO: Tabela que armazena as informações relativas ao usuário<br>
+    USUARIO: Tabela que armazena as informações relativas ao usuário
+    dataNascimento:
+    genero:
+    dataInscricao:
+   
+    ADMINISTRADOR: Tabela que armazena as informações relativas ao administrador
+    matriculaFuncional:
+    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada administrador do sistema.
     
-    ADMINISTRADOR: Tabela que armazena as informações relativas ao administrador<br>
+    CONTATO:
     
+    ENDERECO:
     
+    LOCAL:
+    apelido:
     
+    ROTA:
     
+    BOLETIM: Tabela que armazena as informações relativas ao boletim
+    data:
+    hora:
+    crime:
+    numeroBoletim:
+    idPessoa:
+    
+
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
