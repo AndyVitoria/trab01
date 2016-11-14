@@ -35,12 +35,11 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
     [Grupo02]: Brendon Mauro
 
 ####5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
-    
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
+    A) Herança da tabela de pessoas: Em nosso projeto optamos por usar heranças nas tabelas de usuários e administradores a partir de uma tabela pessoa, isolando assim as caracteristicas semelhantes das duas tabelas em uma só.<br>
+    B) Tabelas município e bairro: Em nosso projeto optamos por criar tabelas para municípios e bairros, evitando assim a repetição despendiosa desses campos.<br>
+    C) Tabelas de contatos: Em nosso projeto optamos por criar duas tabelas de contato, provendo assim multiplas formas de contatos com multiplos valores.<br>
+    D) Tabela de Tipo de local: Em nosso projeto optamos por criar uma tabela contendo os tipos de locais que os crimes ocorreram para evitar a repetição despendiosa desses campos.<br>
+    E) Campo origem: Em nosso projeto optamos por usar um campo booleano na tabela boletim para identificar quem o inseriu.<br>
 
 ####5.3 DESCRIÇÃO DOS DADOS 
     PESSOA: Tabela que armazena as informações relativas à pessoa.
