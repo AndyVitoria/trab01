@@ -95,7 +95,8 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
       data: campo que armazena a data de ocorrencia do crime.
       hora: campo que armazena a hora da ocorrencia do crime.
       crime: campo que armazena o tipo de crime cometido.
-    
+      origem: campo que indica quem inseriu o boletim. (False = Usuário/True = Administrador)
+      
     ITEM_ROUBADO: Tabela que armazena as informações relativas ao item roubado.
       qtd: campo que armazena a quantidade de itens de cada item roubado.
       item: campo que armazena o nome de cada item roubado.
