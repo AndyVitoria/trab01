@@ -45,38 +45,38 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
 ####5.3 DESCRIÇÃO DOS DADOS 
     PESSOA: Tabela que armazena as informações relativas à pessoa.
      nome: campo que armazena o nome para cada pessoa cadastrada no sistema.
-     email:
-     senha:
+     email: campo que armazena o email para cada pessoa cadastrada no sistema.
+     senha: campo senha que armazena a senha escolhida por cada pessoa.
      ID:
     
     USUARIO: Tabela que armazena as informações relativas ao usuário.
-     data_Nasc:
-     genero:
-     data_de_inscricao:
+     data_Nasc: campo que armazena a data de nascimento de cada usuário.
+     genero: campo que armazena o gênero de cada usuário.
+     data_de_inscricao: campo que armazena a data de inscrição de cada usuário. 
    
     ADMINISTRADOR: Tabela que armazena as informações relativas ao administrador.
      matricula_funcional:
      CPF: campo que armazena o número de Cadastro de Pessoa Física para cada administrador do sistema.
 
     CONTATO:
-     contato_usuario:
+     contato_usuario: campo que armazena o contato do usuario. (Ex.: 27 3252-7219)
     
     TIPO_DE_CONTATO:
-     codigo_contato:
-     tipo_contato:
+     codigo_contato: campo que armazena o codigo referente ao tipo de contato.
+     tipo_contato: campo que armazena o nome do tipo de conato. (Ex.: Telefone)
     
     ENDERECO: Tabela que armazena as informações sobre o endereço.
      ID:
-     rua:
+     rua: campo que armazena o nome da rua de cada endereço cadastrado.
      CEP: campo que armazena o Codigo de Endereçamento Postal de cada endereço cadastrado.
     
     Bairro:
      Codigo_bairro:
-     Nome_bairro:
+     Nome_bairro: campo que armazena o nome de cada bairro.
      
     Municipio:
      Codigo_municipio: 
-     Nome_micinipio: campo que armazena o nome do município.
+     Nome_micinipio: campo que armazena o nome de cada município.
     
     LOCAL: Tabela que armazena as informações relativas ao local salvo pelo usuário.
      apelido:
@@ -98,8 +98,8 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
      crime:
     
     ITEM_ROUBADO: Tabela que armazena as informações relativas ao item roubado.
-     qtd:
-     item:
+     qtd: campo que armazena a quantidade de itens de cada item roubado.
+     item: campo que armazena o nome de cada item roubado.
     
     TIPO_DE_LOCAL: Tabela que armazena as informações relativas ao tipo de local.
      codigo:
