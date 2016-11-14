@@ -95,7 +95,7 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
       data: campo que armazena a data de ocorrencia do crime.
       hora: campo que armazena a hora da ocorrencia do crime.
       crime: campo que armazena o tipo de crime cometido.
-      origem: campo que indica quem inseriu o boletim. (False = Usuário/True = Administrador)
+      origem: campo que indica quem inseriu o boletim. (Ex.: False = Usuário)
       
     ITEM_ROUBADO: Tabela que armazena as informações relativas ao item roubado.
       qtd: campo que armazena a quantidade de itens de cada item roubado.
@@ -110,6 +110,113 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
 ![Alt text](https://github.com/AndyVitoria/trab01/blob/master/LOGICO.jpg?raw=true "Modelo Lógico ")
 
 ###7	MODELO FÍSICO<br>
+    -- Geração de Modelo físico
+    -- Sql ANSI 2003 - brModelo.
+
+    CREATE TABLE PESSOA (
+        Email VARCHAR(250),
+        ID SERIAL PRIMARY KEY,
+        Nome VARCHAR(250),
+        Senha VARCHAR(50)
+    );
+
+    CREATE TABLE Contato (
+        Contato_Usuario VARCHAR(250),
+        ID SERIAL,
+        Codigo_contato SERIAL,
+        FOREIGN KEY(ID) REFERENCES PESSOA (ID)
+    );
+
+    CREATE TABLE TIPO_DE_CONTATO (
+        Tipo_Contato VARCHAR(150),
+        Codigo_contato SERIAL PRIMARY KEY
+    );
+
+    CREATE TABLE USUARIO (
+        Data_Nasc DATE,
+        Data_de_inscricao DATE,
+        Genero CHAR(1),
+        ID SERIAL,
+        FOREIGN KEY(ID) REFERENCES PESSOA (ID)
+    );
+
+    CREATE TABLE ROTA (
+        ID_Rota SERIAL PRIMARY KEY,
+        Apelido VARCHAR(250),
+        ID_Usuario INTEGER
+    );
+
+    CREATE TABLE LOCAL (
+        ID_Local SERIAL PRIMARY KEY,
+        ID_Usuario INTEGER,
+        Apelido VARCHAR(250),
+        ID_Endereco INTEGER
+    );
+
+    CREATE TABLE ENDERECO (
+        ID_Endereco INTEGER PRIMARY KEY,
+        Rua VARCHAR(250),
+        CEP INTEGER,
+        Codigo_bairro INTEGER
+    );
+
+    CREATE TABLE CAMINHO (
+        Ordem INTEGER,
+        ID_Endereco INTEGER,
+        ID_Rota SERIAL,
+        FOREIGN KEY(ID_Endereco) REFERENCES ENDERECO (ID_Endereco),
+        FOREIGN KEY(ID_Rota) REFERENCES ROTA (ID_Rota)
+    );
+
+    CREATE TABLE ITEM_ROUBADO (
+        Qtd INTEGER,
+        Item VARCHAR(250),
+        ID_Boletim INTEGER
+    );
+
+    CREATE TABLE TIPO_DE_LOCAL (
+        Tipo_local VARCHAR(150),
+        Codigo SERIAL PRIMARY KEY
+    );
+
+    CREATE TABLE ADMINISTRADOR (
+        CPF INTEGER,
+        Matricula_funcional VARCHAR(25),
+        ID SERIAL,
+        FOREIGN KEY(ID) REFERENCES PESSOA (ID)
+    );
+
+    CREATE TABLE BOLETIM (
+        Data DATE,
+        Hora TIME,
+        Crime VARCHAR(10),
+        ID_Boletim INTEGER PRIMARY KEY,
+        ID_Endereco INTEGER,
+        Codigo SERIAL,
+        ID SERIAL,
+        Origem BOOLEAN,
+        FOREIGN KEY(ID_Endereco) REFERENCES ENDERECO (ID_Endereco),
+        FOREIGN KEY(Codigo) REFERENCES TIPO_DE_LOCAL (Codigo),
+        FOREIGN KEY(ID) REFERENCES PESSOA (ID)
+    );
+
+    CREATE TABLE BAIRRO (
+        Codigo_bairro INTEGER PRIMARY KEY,
+        Nome_bairro VARCHAR(250),
+        Codigo_municipio INTEGER
+    );
+
+    CREATE TABLE MUNICIPIO (
+        Codigo_municipio INTEGER PRIMARY KEY,
+        Nome_municipio VARCHAR(250)
+    );
+
+    ALTER TABLE Contato ADD FOREIGN KEY(Codigo_contato) REFERENCES TIPO_DE_CONTATO (Codigo_contato);
+    ALTER TABLE LOCAL ADD FOREIGN KEY(ID_Endereco) REFERENCES ENDERECO (ID_Endereco);
+    ALTER TABLE ENDERECO ADD FOREIGN KEY(Codigo_bairro) REFERENCES BAIRRO (Codigo_bairro);
+    ALTER TABLE ITEM_ROUBADO ADD FOREIGN KEY(ID_Boletim) REFERENCES BOLETIM (ID_Boletim);
+    ALTER TABLE BAIRRO ADD FOREIGN KEY(Codigo_municipio) REFERENCES MUNICIPIO (Codigo_municipio);
+
 ###8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 ####8.1 DETALHAMENTO DAS INFORMAÇÕES
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
