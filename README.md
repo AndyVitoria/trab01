@@ -43,7 +43,18 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
     b) justifique!
 
 ####5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
+    PESSOA: Tabela que armazena as informações relativas à pessoa<br>
+    nome:
+    email:
+    senha:
+    contato:
+    
+    USUARIO: Tabela que armazena as informações relativas ao usuário<br>
+    
+    ADMINISTRADOR: Tabela que armazena as informações relativas ao administrador<br>
+    
+    
+    
     
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
