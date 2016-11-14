@@ -44,66 +44,66 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
 
 ####5.3 DESCRIÇÃO DOS DADOS 
     PESSOA: Tabela que armazena as informações relativas à pessoa.
-     nome: campo que armazena o nome para cada pessoa cadastrada no sistema.
-     email: campo que armazena o email para cada pessoa cadastrada no sistema.
-     senha: campo senha que armazena a senha escolhida por cada pessoa.
-     ID:
+      nome: campo que armazena o nome para cada pessoa cadastrada no sistema.
+      email: campo que armazena o email para cada pessoa cadastrada no sistema.
+      senha: campo senha que armazena a senha escolhida por cada pessoa.
+      ID: campo que armazena o codigo único de identificação do usuário/administrador.
     
     USUARIO: Tabela que armazena as informações relativas ao usuário.
-     data_Nasc: campo que armazena a data de nascimento de cada usuário.
-     genero: campo que armazena o gênero de cada usuário.
-     data_de_inscricao: campo que armazena a data de inscrição de cada usuário. 
+      data_Nasc: campo que armazena a data de nascimento de cada usuário.
+      genero: campo que armazena o gênero de cada usuário.
+      data_de_inscricao: campo que armazena a data de inscrição de cada usuário. 
    
     ADMINISTRADOR: Tabela que armazena as informações relativas ao administrador.
-     matricula_funcional:
-     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada administrador do sistema.
+      matricula_funcional: campo que armazena o numero da matricula do administrador.
+      CPF: campo que armazena o número de Cadastro de Pessoa Física para cada administrador do sistema.
 
     CONTATO:
-     contato_usuario: campo que armazena o contato do usuario. (Ex.: 27 3252-7219)
+      contato_usuario: campo que armazena o contato do usuario. (Ex.: 27 3252-7219)
     
     TIPO_DE_CONTATO:
-     codigo_contato: campo que armazena o codigo referente ao tipo de contato.
-     tipo_contato: campo que armazena o nome do tipo de conato. (Ex.: Telefone)
+      codigo_contato: campo que armazena o codigo referente ao tipo de contato.
+      tipo_contato: campo que armazena o nome do tipo de conato. (Ex.: Telefone)
     
     ENDERECO: Tabela que armazena as informações sobre o endereço.
-     ID:
-     rua: campo que armazena o nome da rua de cada endereço cadastrado.
-     CEP: campo que armazena o Codigo de Endereçamento Postal de cada endereço cadastrado.
+      ID: campo que armazena o codigo unico do endereço.
+      rua: campo que armazena o nome da rua de cada endereço cadastrado.
+      CEP: campo que armazena o Codigo de Endereçamento Postal de cada endereço cadastrado.
     
     Bairro:
-     Codigo_bairro:
-     Nome_bairro: campo que armazena o nome de cada bairro.
+      Codigo_bairro: campo que armazena o codigo unico do bairro.
+      Nome_bairro: campo que armazena o nome de cada bairro.
      
     Municipio:
-     Codigo_municipio: 
-     Nome_micinipio: campo que armazena o nome de cada município.
+      Codigo_municipio: campo que armazena o codigo unico do município.
+      Nome_micinipio: campo que armazena o nome de cada município.
     
     LOCAL: Tabela que armazena as informações relativas ao local salvo pelo usuário.
-     apelido:
-     ID_Usuarui:
-     ID_Local:
+      apelido: campo que armazena o nome fantasia do local, salvo e definido pelo usuário.
+      ID_Usuario: campo que armazena o ID do usuário a que este local pertence.
+      ID_Local: campo que armazena o codigo único de identificação do local.
     
     ROTA: Tabela que armazena as informações relativas à rota salva pelo usuário.
-     apelido:
-     ID_Rota:
-     ID_Usuario:
+      apelido: campo que armazena o nome fantasia da rota, salva e definida pelo usuário.
+      ID_Rota: campo que armazena o codigo único de identificação da rota.
+      ID_Usuario: campo que armazena o ID do usuário a que esta rota pertence.
      
     CAMINHO: Tabela que armazena as informações relativas à ordem da rota salva pelo usuário.
-     ordem:
+      ordem: Campo que armazena a ordem dos caminhos da rota.
     
     BOLETIM: Tabela que armazena as informações relativas ao boletim.
-     ID:
-     data:
-     hora:
-     crime:
+      ID: campo que armazena o codigo único do boletim, gerado pela policia.
+      data: campo que armazena a data de ocorrencia do crime.
+      hora: campo que armazena a hora da ocorrencia do crime.
+      crime: campo que armazena o tipo de crime cometido.
     
     ITEM_ROUBADO: Tabela que armazena as informações relativas ao item roubado.
-     qtd: campo que armazena a quantidade de itens de cada item roubado.
-     item: campo que armazena o nome de cada item roubado.
+      qtd: campo que armazena a quantidade de itens de cada item roubado.
+      item: campo que armazena o nome de cada item roubado.
     
     TIPO_DE_LOCAL: Tabela que armazena as informações relativas ao tipo de local.
-     codigo:
-     tipo_local:
+      codigo: campo que armazena o codigo único do tipo de local em que o crime ocorreu.
+      tipo_local: campo que armazena o tipo de local em que o crime ocorreu.
 
 
 ###6	MODELO LÓGICO<br>
