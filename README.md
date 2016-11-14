@@ -107,7 +107,7 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
 
 
 ###6	MODELO LÓGICO<br>
-###[AQUI!]
+![Alt text](https://github.com/AndyVitoria/trab01/blob/master/BD%20-%20Savior%20-%20LOGICO.jpg?raw=true "Modelo Lógico ")
 
 ###7	MODELO FÍSICO<br>
 ###8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
