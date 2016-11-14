@@ -16,7 +16,7 @@ Os usuários poderão visualizar no mapa a taxa de assalto em uma determinada ru
 Os usuários poderão pesquisar locais e rotas as quais ele preferir, assim como salvá-los em seu perfil. Ao salvar um local o usuário terá acesso as estatísticas deste local. Sobre os usuários deseja-se saber: Nome, Data de nascimento, Gênero, E-mail, Senha e o Estado, Município, Bairro, Endereço e Número. Os usuários deverão ser notificados quando houver uma atualização no banco de dados, seus locais salvos também serão atualizados.<br>
 Quando atualizado, o sistema irá gerar novos relatórios contabilizando os itens mais roubados, junto com a taxa de aumento de furtos e roubos dos bairros, dos municípios e do estado. O sistema fornecerá relatórios ao administrador com o aumento da taxa de furtos e roubos, a fim de apresentar a população e a prefeitura, permitindo a população cruzar os dados com os divulgados pelas prefeituras. 
 Sobre o administrador, deseja-se saber: o E-mail, Nome, ID da empresa e senha. O administrador poderá adicionar e remover outros administradores, adicionar e remover tabelas do banco de dados e gerar relatórios.<br>
- 
+
 ###4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Protótipo do sistema<br>
 Esta é uma versão idealizada do sistema montada no Balsamiq Mockups. Mostrando como funcionará sua base, podendo ser alterada no decorrer do projeto.<br>
