@@ -10,7 +10,6 @@ CREATE TABLE Contato (
     ID INT NOT NULL,
     Codigo_contato INT NOT NULL,
     FOREIGN KEY(ID) REFERENCES PESSOA (ID)
-    
 );
 
 CREATE TABLE USUARIO (
@@ -108,8 +107,14 @@ ALTER TABLE BAIRRO ADD FOREIGN KEY(Codigo_municipio) REFERENCES MUNICIPIO (Codig
 INSERT INTO USUARIO (NOME, SENHA, EMAIL, DATA_NASC, GENERO) VALUES
 ('JOÃO', '123456','joaostn@gmail.com','1990/07/19','M'),
 ('JOSÉ MARIA', 'KK1234','jsmaria@gmail.com','1961/05/29','M'),
-('GERALDO', 'VNSA321','jsgeraldo@gmail.com','1972/12/29','M');
+('GERALDO', 'VNSA321','jsgeraldo@gmail.com','1972/12/29','M'),
+('JULIANA','OI908','julianayks@gmail.com','1997/07/19','F');
 
 INSERT INTO ADMINISTRADOR (NOME, SENHA, EMAIL, CPF, MATRICULA_FUNCIONAL) VALUES
 ('ANDRE','98765432','andre.barbosa@gmail.com',123456789,'34567123');
+
+INSERT INTO TIPO_DE_CONTATO (TIPO_CONTATO) VALUES
+('Telefone'),
+('Celular'),
+('Facebook');
 
