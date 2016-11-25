@@ -230,6 +230,7 @@ Script disponivel [aqui](https://github.com/AndyVitoria/trab01/blob/master/scrip
 
 ###9	TABELAS E PRINCIPAIS CONSULTAS<br>
 ####9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS<br>
+[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/tabelas)
 ####9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE<br>
 ####9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS<br>
 ####9.4	CONSULTAS QUE USAM OPERADORES LIKE<br>
