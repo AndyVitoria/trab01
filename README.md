@@ -247,6 +247,7 @@ Script disponivel [aqui](https://github.com/AndyVitoria/trab01/blob/master/scrip
 ####9.4	CONSULTAS QUE USAM OPERADORES LIKE<br>
 [Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/like)
 ####9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS<br>
+[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/atualizacao%20e%20exclusao)
 ####9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO<br>
 [Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/juncao%20e%20ordenacao)
 ####9.7	CONSULTAS COM GROUP BY<br>
