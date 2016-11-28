@@ -4,7 +4,8 @@ Trabalho desenvolvido durante a disciplina de BD1
 #Sumário
 
 ###1	COMPONENTES<br>
-Integrantes do grupo: André Barbosa da Vitória, Juliana Yuri Kanezaki de Souza <br>
+- André Barbosa da Vitória;
+- Juliana Yuri Kanezaki de Souza; <br>
 
 ###2	INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados Your Savior, que é uma plataforma de associação, classificação e raqueamento de areas com alto risco de assaltos no estado do Espirito Santo. A motivado pela vontade de aprendizado de alunos do IFES (Instituto Federal do Espirito Santo) e pelo serviço que pode ser disponibilizado à população, objetivando assim um aumento na segurança do estado.<br>
