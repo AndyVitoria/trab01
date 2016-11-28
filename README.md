@@ -219,11 +219,17 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
 
 ###8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 ####8.1 DETALHAMENTO DAS INFORMAÇÕES
-        Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
-        Referenciar todas as fontes referentes a :
-        a) obtenção dos dados
-        b) obtenção de códigos reutilizados
-        c) fontes de estudo para desenvolvimento do projeto
+        A base de dados usada foi retirada do site da Secretaria de Segurança Pública do Espirito Santo.
+        Foram usados 60 lotes de boletins de ocorencia registrados no estado do Espirito Santo.
+        
+        Para extração das informações contidas nos boletins foram executadas os seguintes procedimentos:
+            Optamos por usar a Linguagem de Programação Python pela facilidade que esta porporciona na manipulação de expressões regurlares, usamos a biblioteca PyPDF2 para obter o conteudo dos PDF's e assim verificar a validade dos boletins de ocorência.
+            Fora usado tambem o núcleo da aplicação Tabula em java, fazendo uma integração entre Python e Java, esta ferramena faz a conversão dos PDF's para CSV, uma vez que não foi possivel usar o PyPDF2 para extração dos conteudos, apenas para verificação.
+            Aplicamos também o conceito de programação paralela usando Threads em Python para acelerar o processo de conversão feito pelo Tabula.
+            Apos a conversão usamos a ferramenta Python para extrair os dados dos CSV's e os compilamos em tabelas com os dados úteis ao propósito.
+            Por ultimos usamos a ferramenta Pentaho para converter as informações nas tabelas para o formato adequado a inserção no banco de dados (PostgreSQL), e este fez esta inserção.
+        
+Procedimento para extração dos dados e inserção no Banco de dados: [Clique Aqui](https://github.com/AndyVitoria/trab01/tree/master/Procedimento%20de%20extracao%20dos%20dados)
         
 ####8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
 Script disponivel [aqui](https://github.com/AndyVitoria/trab01/blob/master/script.sql).
