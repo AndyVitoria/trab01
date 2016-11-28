@@ -1,0 +1,5 @@
+Esta é a primeira etapa do processo de extração de dados dos boletins de ocorencia retirados do site da Secretaria de Segurança Pública do Espirito Santo.
+
+Inicialmente baixe os lotes com boletins do site: http://www.sesp.es.gov.br/sitesesp/index.jsp#transparencia.jsp
+
+Após este passo, extraia os boletins dentro do diretório PDF e execute o FiltroPDF.py.

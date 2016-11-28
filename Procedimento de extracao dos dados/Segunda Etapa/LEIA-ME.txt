@@ -1,0 +1,1 @@
+Após o processo de conversão dos PDF's para CSV's copie o resultado gerado para a pasta "Dados Brutos" e execute o "extrator_v2.0.py".

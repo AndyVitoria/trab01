@@ -1,0 +1,3 @@
+Nesta etapa, coloque as tabelas geradas pela segunda etapa na pasta "Tabelas".
+Abra o arquivo do Pentaho e faça as entradas do processo apontar para as devidas tabelas
+Conecte-se no banco de dados do PostgreSQL e execute o procedimento.
