@@ -220,22 +220,19 @@ Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
 
 ###8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 ####8.1 DETALHAMENTO DAS INFORMAÇÕES
-A base de dados usada foi retirada do site da Secretaria de Segurança Pública do Espirito Santo.<br>
-Foram usados 60 lotes de boletins de ocorencia registrados no estado do Espirito Santo.<br>
+Base de dados: A base de dados usada foi retirada do site da Secretaria de Segurança Pública do Espirito Santo. Foram usados 60 lotes de boletins de ocorencia registrados no estado do Espirito Santo.<br>
+Ferramentas: Python 3.5, PyPDF, Tabula 0.9.0, Pentaho.
 
-Optamos por usar a Linguagem de Programação Python pela facilidade que esta porporciona na manipulação de expressões regurlares, usamos a biblioteca PyPDF2 para obter o conteudo dos PDF's e assim verificar a validade dos boletins de ocorência.<br>
+Justificativa: Optamos por usar a Linguagem de Programação Python pela facilidade que esta porporciona na manipulação de expressões regurlares, usamos a biblioteca PyPDF2 para obter o conteudo dos PDF's e assim verificar a validade dos boletins de ocorência, usamos a o núcleo em java da aplicação Tabula que faz manipulação de PDF .<br>
 
-Fora usado tambem o núcleo da aplicação Tabula em java, fazendo uma integração entre Python e Java, esta ferramena faz a conversão dos  PDF's para CSV, uma vez que não foi possivel usar o PyPDF2 para extração dos conteudos, apenas para verificação.<br>
+Procedimento Aplicado: Após o processo de eliminação dos boletins inválidos ou que não pertenciam a categoria de roubo, furto ou tentativa de roubo, fora feito uma integração entre um algoritmo feito em Python pelo grupo e  o núcleo da aplicação Tabula, este algoritmo ferramena fez a conversão dos  PDF's para CSV, uma vez que não foi possivel usar o PyPDF2 para extração dos conteudos, apenas para verificação. Foi aplicado também o conceito de programação paralela usando Threads em Python para acelerar o processo de conversão feito pelo Tabula. Após a conversão foi usado outro algoritmo construido em Python para extrair os dados dos CSV's usando expressões regulares e os compilamos em tabelas com os dados úteis ao propósito.<br>  
 
-Aplicamos também o conceito de programação paralela usando Threads em Python para acelerar o processo de conversão feito pelo Tabula.<br>
+Fonte das ferramentas: [Python 3.5](https://www.python.org/), [PyPDF2](https://github.com/mstamy2/PyPDF2), [Tabula 0.9.0](https://github.com/tabulapdf/tabula-java/releases), [Pentaho 6.1](https://sourceforge.net/projects/pentaho/files/Data%20Integration/6.1/).<br>
+Fonte da base de dados: [SSP-ES](http://www.sesp.es.gov.br/sitesesp/index.jsp#transparencia.jsp).<br>
 
-Apos a conversão usamos a ferramenta Python para extrair os dados dos CSV's e os compilamos em tabelas com os dados úteis ao propósito.<br>
-
-Por ultimos usamos a ferramenta Pentaho para converter as informações nas tabelas para o formato adequado a inserção no banco de dados (PostgreSQL), e este fez esta inserção.<br>
-        
-Procedimento para extração dos dados e inserção no Banco de dados: [Clique Aqui](https://github.com/AndyVitoria/trab01/tree/master/Procedimento%20de%20extracao%20dos%20dados).
-        
 ####8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
+Usamos a ferramenta Pentaho para converter as informações nas tabelas gerada pelo algoritmo em Python, para o formato adequado a inserção no banco de dados (PostgreSQL), e este fez esta inserção.<br>  
+Procedimento para extração dos dados e inserção no Banco de dados: [Clique Aqui](https://github.com/AndyVitoria/trab01/tree/master/Procedimento%20de%20extracao%20dos%20dados).<br>
 Script disponivel [aqui](https://github.com/AndyVitoria/trab01/blob/master/script.sql).
 
 ###9	TABELAS E PRINCIPAIS CONSULTAS<br>
