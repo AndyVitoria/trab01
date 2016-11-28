@@ -258,6 +258,10 @@ Script disponivel [aqui](https://github.com/AndyVitoria/trab01/blob/master/scrip
 [Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/subconsultas)
 ###10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
 ###11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
+    1. Construir o Modelo Conceitual;
+    2. Encontrar ferramentas que nos auxiliasse a extrair os dados dos boletins de forma eficaz;
+    3. Aprender a usar o Pentaho;
+    
 ###12  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 
