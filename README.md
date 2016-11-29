@@ -22,7 +22,7 @@ Sobre o administrador, deseja-se saber: o E-mail, Nome, Matricula Funcional, Con
 Protótipo do sistema<br>
 Esta é uma versão idealizada do sistema montada no Balsamiq Mockups. Mostrando como funcionará sua base, podendo ser alterada no decorrer do projeto.<br>
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
-Link: https://drive.google.com/open?id=0B4qAOHMp3wcZUDY0alhuZEdFdWc<br>
+Link para o [Prototipo](https://github.com/AndyVitoria/trab01/blob/master/Prototipo.pdf)<br>
 ![Alt text](https://github.com/AndyVitoria/BD1/blob/master/Prototipo_home.jpeg?raw=true "Prototipo Home")
 
 ###5	MODELO CONCEITUAL<br>
