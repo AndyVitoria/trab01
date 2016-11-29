@@ -29,8 +29,6 @@ Link para o [Prototipo](https://github.com/AndyVitoria/trab01/blob/master/Protot
     5.1 NOTACAO ENTIDADE RELACIONAMENTO
 ![Alt text](https://github.com/AndyVitoria/trab01/blob/master/CONCEITUAL.jpg?raw=true "Modelo Conceitual")
    
-    5.2 NOTACAO UML (Caso esteja fazendo a disciplina de analise)
-
 ####5.1 Validação do Modelo Conceitual
     [Grupo01]: Everson Delmaschio
     [Grupo02]: Brendon Mauro
