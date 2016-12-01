@@ -12,24 +12,24 @@ SELECT *FROM CONTATO; <br>
 ![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Contato.png "Contato")<br><br>
 SELECT *FROM ENDERECO; <br>
 ![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Endereco.png "Endereço")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
-SELECT *FROM BAIRRO; <br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Administrador.png "Administrador")<br><br>
+SELECT *FROM ITEM_ROUBADO; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Item_roubado.png "Item Roubado")<br><br>
+SELECT *FROM LOCAL; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Local.png "Local")<br><br>
+SELECT *FROM MUNICIPIO; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Municipio.png "Municipio")<br><br>
+SELECT *FROM PESSOA; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Pessoa.png "Pessoa")<br><br>
+SELECT *FROM ROTA; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Rota.png "Rota")<br><br>
+SELECT *FROM TIPO_DE_CONTATO; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Tipo_de_contato.png "Tipo de Contato")<br><br>
+SELECT *FROM TIPO_DE_CRIME; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Tipo_de_crime.png "Tipo de Crime")<br><br>
+SELECT *FROM TIPO_DE_LOCAL; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Tipo_de_local.png "Tipo de Local")<br><br>
+SELECT *FROM USUARIO; <br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/tabelas/Usuario.png "Usuario")<br><br>
 ####9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE<br>
 
 ####9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS<br>
