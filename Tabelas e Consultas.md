@@ -52,11 +52,11 @@ SELECT *FROM USUARIO WHERE GENERO = 'M';<br>
 
 SELECT CRIME, CODIGO, DATA, ID_BOLETIM FROM BOLETIM <br>
 WHERE CRIME = 'B01A' AND CODIGO = 26;<br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/where/where2.PNG "Where 2")<br><br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/where/where2.png "Where 2")<br><br>
 
 SELECT *FROM BOLETIM<br> 
 WHERE HORA IS NULL AND ID_ENDERECO > 10000;<br>
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/where/where3.PNG "Where 3")<br><br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/where/where3.png "Where 3")<br><br>
 
 ####9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS<br>
 
@@ -72,15 +72,15 @@ WHERE HORA IS NOT NULL OR CRIME = 'B01G';<br>
 
 SELECT *FROM TIPO_DE_LOCAL<br> 
 WHERE TIPO_LOCAL LIKE '%AL%';
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like1.PNG "Like 1")<br><br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like1.png "Like 1")<br><br>
 
 SELECT *FROM TIPO_DE_LOCAL <br>
 WHERE TIPO_LOCAL LIKE '________';
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like2.PNG "Like 2")<br><br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like2.png "Like 2")<br><br>
 
 SELECT *FROM TIPO_DE_CRIME <br>
 WHERE ESPECIFICACAO LIKE '%O';
-![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like3.PNG "Like 3")<br><br>
+![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like3.png "Like 3")<br><br>
 
 ####9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS<br>
 
