@@ -71,15 +71,15 @@ WHERE HORA IS NOT NULL OR CRIME = 'B01G';<br>
 ####9.4	CONSULTAS QUE USAM OPERADORES LIKE<br>
 
 SELECT *FROM TIPO_DE_LOCAL<br> 
-WHERE TIPO_LOCAL LIKE '%AL%';
+WHERE TIPO_LOCAL LIKE '%AL%';<br> 
 ![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like1.png "Like 1")<br><br>
 
 SELECT *FROM TIPO_DE_LOCAL <br>
-WHERE TIPO_LOCAL LIKE '________';
+WHERE TIPO_LOCAL LIKE '________';<br> 
 ![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like2.png "Like 2")<br><br>
 
 SELECT *FROM TIPO_DE_CRIME <br>
-WHERE ESPECIFICACAO LIKE '%O';
+WHERE ESPECIFICACAO LIKE '%O';<br> 
 ![Alt Text](https://github.com/AndyVitoria/trab01/blob/master/consultas/like/like3.png "Like 3")<br><br>
 
 ####9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS<br>
