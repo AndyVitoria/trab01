@@ -253,6 +253,7 @@ Script disponivel [aqui](https://github.com/AndyVitoria/trab01/blob/master/scrip
 ####9.10	SUBCONSULTAS<br>
 [Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/subconsultas)
 ###10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
+[Slides](https://github.com/AndyVitoria/trab01/blob/master/Apresenta%C3%A7%C3%A3o/BD1%20-%20Apresenta%C3%A7%C3%A3o%20final.pdf)
 ###11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
     1. Construir o Modelo Conceitual;
     2. Encontrar ferramentas para nos auxiliar na extração de dados dos boletins de forma eficaz;
