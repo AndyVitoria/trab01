@@ -234,24 +234,7 @@ Procedimento para extração dos dados e inserção no Banco de dados: [Clique A
 Script disponivel [aqui](https://github.com/AndyVitoria/trab01/blob/master/script.sql).
 
 ###9	TABELAS E PRINCIPAIS CONSULTAS<br>
-####9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS<br>
-[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/tabelas)
-####9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE<br>
-[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/where)
-####9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS<br>
-[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/logico%2C%20aritmetico%2C%20renomeado)
-####9.4	CONSULTAS QUE USAM OPERADORES LIKE<br>
-[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/like)
-####9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS<br>
-[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/atualizacao%20e%20exclusao)
-####9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO<br>
-[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/juncao%20e%20ordenacao)
-####9.7	CONSULTAS COM GROUP BY<br>
-[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/group%20by)
-####9.8	CONSULTAS COM LEFT E RIGHT JOIN<br>
-####9.9	CONSULTAS COM SELF JOIN E VIEW<br>
-####9.10	SUBCONSULTAS<br>
-[Tabelas](https://github.com/AndyVitoria/trab01/tree/master/consultas/subconsultas)
+[Consultas](https://github.com/AndyVitoria/trab01/blob/master/Tabelas%20e%20Consultas.md)
 ###10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
 [Slides](https://github.com/AndyVitoria/trab01/blob/master/Apresenta%C3%A7%C3%A3o/BD1%20-%20Apresenta%C3%A7%C3%A3o%20final.pdf)
 ###11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
