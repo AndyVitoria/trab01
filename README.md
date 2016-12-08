@@ -155,7 +155,6 @@ Link para o [Prototipo](https://github.com/AndyVitoria/trab01/blob/master/Protot
     CREATE TABLE ENDERECO (
         ID_Endereco INTEGER PRIMARY KEY,
         Rua VARCHAR(250),
-        CEP INTEGER,
         Codigo_bairro INTEGER
     );
 
