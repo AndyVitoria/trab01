@@ -246,6 +246,7 @@ Script disponivel [aqui](https://github.com/AndyVitoria/trab01/blob/master/scrip
 2. [Twitter](https://github.com/AndyVitoria/trab01/tree/master/Extra%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es%20de%20redes%20sociais/Twitter)
 3. [RapidMiner](https://github.com/AndyVitoria/trab01/tree/master/RapidMiner)
 4. [Slides](https://github.com/AndyVitoria/trab01/blob/master/Apresenta%C3%A7%C3%A3o/Trabalho%202%20-%20Redes%20sociais.pdf)
+5. [Backup](https://github.com/AndyVitoria/trab01/tree/master/Backup)
 
 ###13  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
