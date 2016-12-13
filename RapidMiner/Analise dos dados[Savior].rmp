@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="7.3.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="7.3.000" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="7.3.000" expanded="true" height="68" name="Boletim" width="90" x="45" y="136">
+        <parameter key="repository_entry" value="//DB/BD 1/Example Sets/public.boletim"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="7.3.000" expanded="true" height="68" name="Tipo_de_local" width="90" x="45" y="34">
+        <parameter key="repository_entry" value="//DB/BD 1/Example Sets/public.tipo_de_local"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="codigo" width="90" x="179" y="34">
+        <parameter key="attribute_name" value="codigo"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="codigo (2)" width="90" x="179" y="136">
+        <parameter key="attribute_name" value="codigo"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="join" compatibility="7.3.000" expanded="true" height="82" name="Join Boletim-Local" width="90" x="313" y="85">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="inner"/>
+        <parameter key="use_id_attribute_as_key" value="true"/>
+        <list key="key_attributes"/>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="7.3.000" expanded="true" height="68" name="Tipo_de_crime" width="90" x="916" y="34">
+        <parameter key="repository_entry" value="//DB/BD 1/Example Sets/public.tipo_de_crime"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="7.3.000" expanded="true" height="68" name="Municipio" width="90" x="45" y="340">
+        <parameter key="repository_entry" value="//DB/BD 1/Example Sets/public.municipio"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="7.3.000" expanded="true" height="68" name="Bairro" width="90" x="45" y="442">
+        <parameter key="repository_entry" value="//DB/BD 1/Example Sets/public.bairro"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="7.3.000" expanded="true" height="68" name="Endereco" width="90" x="313" y="340">
+        <parameter key="repository_entry" value="//DB/BD 1/Example Sets/public.endereco"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="codigo_municipio" width="90" x="179" y="340">
+        <parameter key="attribute_name" value="codigo_municipio"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="codigo_municipio (2)" width="90" x="179" y="442">
+        <parameter key="attribute_name" value="codigo_municipio"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="join" compatibility="7.3.000" expanded="true" height="82" name="Join Municipio-Bairro" width="90" x="313" y="442">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="inner"/>
+        <parameter key="use_id_attribute_as_key" value="true"/>
+        <list key="key_attributes"/>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="codigo_bairro (2)" width="90" x="447" y="442">
+        <parameter key="attribute_name" value="codigo_bairro"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="codigo_bairro" width="90" x="447" y="340">
+        <parameter key="attribute_name" value="codigo_bairro"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="join" compatibility="7.3.000" expanded="true" height="82" name="Join Endereco-Bairro" width="90" x="581" y="442">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="inner"/>
+        <parameter key="use_id_attribute_as_key" value="true"/>
+        <list key="key_attributes"/>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="id_endereco (2)" width="90" x="715" y="442">
+        <parameter key="attribute_name" value="id_endereco"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="id_endereco" width="90" x="447" y="136">
+        <parameter key="attribute_name" value="id_endereco"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="join" compatibility="7.3.000" expanded="true" height="82" name="Join Boletim-Endereco" width="90" x="916" y="238">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="inner"/>
+        <parameter key="use_id_attribute_as_key" value="true"/>
+        <list key="key_attributes"/>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="crime" width="90" x="1050" y="238">
+        <parameter key="attribute_name" value="crime"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="7.3.000" expanded="true" height="82" name="codigo_crime" width="90" x="1050" y="34">
+        <parameter key="attribute_name" value="codigo_crime"/>
+        <parameter key="target_role" value="id"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="join" compatibility="7.3.000" expanded="true" height="82" name="Join Boletim-Crime" width="90" x="1184" y="136">
+        <parameter key="remove_double_attributes" value="true"/>
+        <parameter key="join_type" value="inner"/>
+        <parameter key="use_id_attribute_as_key" value="true"/>
+        <list key="key_attributes"/>
+        <parameter key="keep_both_join_attributes" value="false"/>
+      </operator>
+      <connect from_op="Boletim" from_port="output" to_op="codigo (2)" to_port="example set input"/>
+      <connect from_op="Tipo_de_local" from_port="output" to_op="codigo" to_port="example set input"/>
+      <connect from_op="codigo" from_port="example set output" to_op="Join Boletim-Local" to_port="left"/>
+      <connect from_op="codigo (2)" from_port="example set output" to_op="Join Boletim-Local" to_port="right"/>
+      <connect from_op="Join Boletim-Local" from_port="join" to_op="id_endereco" to_port="example set input"/>
+      <connect from_op="Tipo_de_crime" from_port="output" to_op="codigo_crime" to_port="example set input"/>
+      <connect from_op="Municipio" from_port="output" to_op="codigo_municipio" to_port="example set input"/>
+      <connect from_op="Bairro" from_port="output" to_op="codigo_municipio (2)" to_port="example set input"/>
+      <connect from_op="Endereco" from_port="output" to_op="codigo_bairro" to_port="example set input"/>
+      <connect from_op="codigo_municipio" from_port="example set output" to_op="Join Municipio-Bairro" to_port="left"/>
+      <connect from_op="codigo_municipio (2)" from_port="example set output" to_op="Join Municipio-Bairro" to_port="right"/>
+      <connect from_op="Join Municipio-Bairro" from_port="join" to_op="codigo_bairro (2)" to_port="example set input"/>
+      <connect from_op="codigo_bairro (2)" from_port="example set output" to_op="Join Endereco-Bairro" to_port="right"/>
+      <connect from_op="codigo_bairro" from_port="example set output" to_op="Join Endereco-Bairro" to_port="left"/>
+      <connect from_op="Join Endereco-Bairro" from_port="join" to_op="id_endereco (2)" to_port="example set input"/>
+      <connect from_op="id_endereco (2)" from_port="example set output" to_op="Join Boletim-Endereco" to_port="right"/>
+      <connect from_op="id_endereco" from_port="example set output" to_op="Join Boletim-Endereco" to_port="left"/>
+      <connect from_op="Join Boletim-Endereco" from_port="join" to_op="crime" to_port="example set input"/>
+      <connect from_op="crime" from_port="example set output" to_op="Join Boletim-Crime" to_port="right"/>
+      <connect from_op="codigo_crime" from_port="example set output" to_op="Join Boletim-Crime" to_port="left"/>
+      <connect from_op="Join Boletim-Crime" from_port="join" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
