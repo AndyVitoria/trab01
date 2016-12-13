@@ -1,0 +1,8 @@
+Primeiramente abra a tranformação do Pentaho, insira o token que pode ser obtido neste link: https://developers.facebook.com/tools/explorer/
+no campo Data, na coluna "access_token". Após isso defina os arquivos de saida para a pasta JSON neste projeto.
+Finalizado este processo, execute o FBCompiler.py. Ele irá gerar uma tabela contendo o id, data, hora e titulo do post e um arquivo
+para cada post com o conteudo deste.
+
+Após a extração insiras as informações do seu banco de dados no local indicado no arquivo Insert.py e execute este.
+
+Bibliotecas nessesárias: SQLAlchemy, Psycopg2.

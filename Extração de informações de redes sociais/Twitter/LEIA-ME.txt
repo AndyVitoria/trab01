@@ -1,0 +1,18 @@
+Primeiramente insira os tokens gerados pela app do twitter, após isso execute o Extractor.py.
+Informe a palavra-chave da busca, este pode buscar até 2 buscas por aplicação do twitter.
+
+=========={ATENÇÃO!}==========
+Este processo de busca pode não possuir fim, pois o numero de tweets é muito alto.
+Finalize o processo quando achar uma quantidade rasoavel de tweets.
+==============================
+
+Após a coleta de tweets execute o Compilador.py, ele irá transforma todos os tweets em uma tabela, também corrigindo
+erros gerados por caracteres especiais.
+
+=========={ATENÇÃO!}==========
+Este processo pode não funcionar em algumas IDE's. Para uma melhor experiencia com o programa use o Pycharm Communit.
+==============================
+
+Terminado esta etapa abra o arquivo "Inserção de dados Twitter.ktr" com o Pentaho, e insira o caminho do arquivo gerado
+pelo Compilador.py no campo Twitter, e conecte-se com o banco de dados.
+Execute a transformação.
